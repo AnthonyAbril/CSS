@@ -1,0 +1,129 @@
+
+body {
+    font-family: Helvetica;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0px;
+    background-color: #f1fbff;
+}
+
+#cabezera {
+    position: relative;
+    color:#8cc461;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    background-color: #97d8ee;
+}
+
+#cabezera header {
+    position: relative;
+    width:100%;
+    padding: 1px 0 1px 20px;
+    text-align: center;
+    border-bottom: 2px white solid;
+}
+
+#cabezera nav {
+    position: relative;
+    width:100%;
+    padding: 1px 0 1px 0;
+    display:flex;
+    justify-content: center;
+}
+
+#cabezera ul {
+    margin: 10px 0 10px 0;
+}
+
+#cabezera li{
+    display: inline;
+    padding: 3px 10px;
+}
+
+#cabezera li:hover {
+    color:white;
+    background-color: #8cc461;
+    border-radius: 20px;
+}
+
+#resto {
+    position: relative; 
+    margin: 18px;
+}
+
+#resto hgroup {
+    background-color: #97d8ee;
+    border-left: #8cc461 solid 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+#resto h1 {
+    color:#8cc461;
+    font-size: 30px;
+    padding: 15px 15px 0 15px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+}
+
+#resto h2 {
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 15px 15px 15px;
+    color:#97d8ee;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#resto time {
+    display: inline-block;
+    padding: 5px;
+    color:#8cc461;
+}
+
+#resto div {
+    border-left: solid 10px #8cc461;
+    border-bottom: solid 10px #8cc461;
+    border-radius: 0 22px 20px;
+}
+
+div > p{
+    width: 500px;
+    top:0px;
+    color:white;
+    padding: 5px;
+    background-color:#8cc461;
+    width: 500px;
+    overflow:hidden;
+    float:left;
+}
+
+figure {
+    display: inline-block;
+    position:relative;
+    bottom:0px;
+}
+#pie {
+    color:#8cc461;
+    width:100%;
+    background-color: #97d8ee;
+    display: block;
+}
+
+#pie footer {
+    float:right;
+    padding: 15px 15px 15px 15px;
+    display: block;
+    background-color: #97d8ee;
+    width:100%;
+    text-align: right;
+}
+
+#pie aside blockquote {
+    display: block;
+    margin:0;
+    padding: 10px;
+}
