@@ -1,4 +1,6 @@
-/* ---- Estilos básicos ---------------------------------------------------- */
+/* For mobile phones: */
+
+/* ---- Estilos bï¿½sicos ---------------------------------------------------- */
 
 body {
   margin: 0;
@@ -54,15 +56,15 @@ ul, ol {
 /* ---- Layout ------------------------------------------------------------- */
 
 #contenedor {
-  width:770px;
-  margin: 50px auto 0 auto;
+  width:760px;
+  margin: 5px auto 0 auto;
 }
 
 #cabecera {
-  width: 770px;
+  width: 760px;
   position: relative;
   height: 100px;
-  margin: 0;
+  margin: 0 5px 0 5px;
   padding: 0;
   background: #233C9B url("../imagenes/cabecera.jpg") no-repeat;
   color: #FFF;
@@ -132,9 +134,10 @@ ul, ol {
   border: none;
 }
 
-/* ---- Menú --------------------------------------------------------------- */
+/* ---- Menï¿½ --------------------------------------------------------------- */
 #menu {
   background: #192666;
+  width: 100%;
   margin: 0 5px;
   padding: 10px 0 0 0;
 }
@@ -266,4 +269,26 @@ ul, ol {
   position: absolute;
   top: 10px;
   left: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  a {
+    background-color: rgb(20, 221, 53)
+  }
+
+  #contenedor,#cabecera {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 761px) {
+  /* For desktop: */
+  a {
+    background-color: rgb(221, 20, 117)
+  }
+
+  #contenedor,#cabecera {
+    width: 760px;
+  }
 }
