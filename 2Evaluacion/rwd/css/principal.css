@@ -3,8 +3,7 @@
 /* ---- Estilos b�sicos ---------------------------------------------------- */
 
 body {
-  margin: 0;
-  padding: 0;
+  padding: 0 5px 0 5px;
   background: #F2F5FE url("../imagenes/fondo.gif") 0 0 repeat-x;
   font: 70%/160% "verdana", sans-serif;
   color: #192666;
@@ -57,14 +56,13 @@ ul, ol {
 
 #contenedor {
   width:760px;
-  margin: 5px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 #cabecera {
   width: 760px;
   position: relative;
   height: 100px;
-  margin: 0 5px 0 5px;
   padding: 0;
   background: #233C9B url("../imagenes/cabecera.jpg") no-repeat;
   color: #FFF;
@@ -72,7 +70,6 @@ ul, ol {
 
 #contenido {
   width: 760px;
-  margin: 0 5px;
   background: #FFF;
 }
 
@@ -138,7 +135,6 @@ ul, ol {
 #menu {
   background: #192666;
   width: 100%;
-  margin: 0 5px;
   padding: 10px 0 0 0;
 }
 
@@ -188,7 +184,7 @@ ul, ol {
 }
 
 #contenido .articulo h2 {
-  margin: 0 -20px;
+  margin: 0 0;
   padding: 10px;
   background: #DEE5FD;
   color: #192666;
@@ -224,9 +220,6 @@ ul, ol {
 #contenido #secundario #sobremi img {
   float: left;
   margin: 4px 5px 0 0;
-}
-
-#contenido #secundario #sobremi p {
 }
 
 #contenido #secundario div {
@@ -274,7 +267,7 @@ ul, ol {
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   a {
-    background-color: rgb(20, 221, 53)
+    background-color: rgb(20, 221, 53);
   }
 
   #contenedor,#cabecera {
@@ -285,10 +278,193 @@ ul, ol {
 @media only screen and (min-width: 761px) {
   /* For desktop: */
   a {
-    background-color: rgb(221, 20, 117)
+    background-color: rgb(221, 20, 117);
   }
 
-  #contenedor,#cabecera {
-    width: 760px;
+  /* ---- Layout ------------------------------------------------------------- */
+
+  #contenedor {
+    width:760px;
+    margin: 0 auto 0 auto;
   }
+
+  #cabecera {
+    width: 100%;
+    position: relative;
+    height: max-content;
+    padding:0;
+    background-size: 100% 100%;
+  }
+
+  #contenido #principal {
+    width: 75%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  #contenido #secundario {
+    width: 20%;
+    margin: 0;
+    padding:0;
+    
+    
+    height: 100%;
+    float:left;
+    padding: 0 0 20px;
+
+    background: #CEDBF9 url("../imagenes/fondo_columna.gif") no-repeat;
+    background-size: contain;
+  }
+
+  #pie {
+    clear: both;
+    height: 60px;
+    margin-bottom: 50px;
+    background: none;
+    background-color: #FFF;
+    border-radius: 0 0 15px 15px;
+    color: #6685CC;
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+  }
+
+
+  /* ---- Cabecera ----------------------------------------------------------- */
+  
+  #contenedor,#cabecera {
+    width: 100%;
+  }
+  
+  #cabecera #logo {
+    top:0;
+    left:0;
+    position: relative;
+    display: block;
+    padding: 35px;
+  }
+
+  #cabecera #logo a {
+    color: #FFF;
+    display: inline-block;
+  }
+
+  #cabecera #logo a:hover {
+    color: #B5C4E3;
+    text-decoration: underline;
+  }
+
+  #cabecera #buscador {
+    top:0;
+    left:0;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+
+  #cabecera #buscador legend {
+    display: none;
+    margin-bottom: 15px;
+  }
+
+  #cabecera #buscador fieldset {
+    border: none;
+    text-align: center;
+  }
+
+
+  /* ---- Men� --------------------------------------------------------------- */
+  #menu {
+    left:-250px;
+    z-index: 5;
+    background: #192666;
+    position:absolute;
+    width: 250px;
+    float:left;
+    padding: 0 30px 20px 0;
+  }
+
+  #menu:hover {
+    left:0;
+  }
+
+  #menu ul {
+    padding: 0;
+    list-style:none;
+  }
+
+  #menu ul li {
+    margin: 15px 5px 0 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  #menu ul li a {
+    display: block;
+    position: relative;
+    padding: 5px 15px;
+    border: 0;
+    background: #253575;
+    color: #B5C4E3;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #menu ul li a:hover {
+    background: #31479B;
+  }
+
+  #menu ul li.seleccionado a {
+    background: #FFF;
+    color: #FF9000;
+  }
+
+  #contenido {
+    width: 100%;
+    float:left;
+  }
+
+  /* ---- Contenidos --------------------------------------------------------- */
+  #contenido .articulo {
+    clear: both;
+    width: 100%;
+    
+    position: relative;
+    display: block;
+    text-align: center;
+
+    margin:0;
+    padding: 0;
+    background: url("../imagenes/fondo_articulo.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  #contenido .articulo img {
+    width: 85%;
+  }
+
+  #contenido .articulo h2 {
+    text-align: center;
+    border-radius: 15px 0 0 0;
+  }
+
+  #contenido .articulo p {
+    text-align:left;
+  }
+
+  #contenido .articulo .info {
+    text-align: center;
+  }
+
+  /* ---- Pie ---------------------------------------------------------------- */
+  #pie p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
 }
